@@ -46,7 +46,7 @@ let checkUser = function(rta) {
             alert("Bienvenido: "+rta.name);
             sessionStorage.setItem("idUser", rta.id);
             if(rta.type == "ADM"){ //Adminstrador
-                location.href = "frontciclo4/usuarios.html";
+                location.href = "http://129.151.125.93/frontciclo4/usuarios.html";
             }else if(rta.type == "COORD"){ //Coordinador
                 location.href = "../inventario.html";
             }
@@ -66,7 +66,7 @@ $("#login").click(function () {
 
 function validarUsuario(response) {
     if (response.id != null) {
-        location.href = "frontciclo4/usuarios.html";
+        location.href = "http://129.151.125.93/frontciclo4/usuarios.html";
         alert("¡Bienvenido! " + response.name);
     } else {
         alert("Usuario no registrado :/");
@@ -536,5 +536,5 @@ window.onload = consultarInventario();
 
 $("#cerrarSesion").click(function(){
     sessionStorage.clear();
-    location.href = "../index.html";
+    location.href = "http://129.151.125.93/frontciclo4/index.html";
 });
