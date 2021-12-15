@@ -48,7 +48,7 @@ let checkUser = function(rta) {
             if(rta.type == "ADM"){ //Adminstrador
                 location.href = "http://129.151.125.93/frontciclo4/usuarios.html";
             }else if(rta.type == "COORD"){ //Coordinador
-                location.href = "../inventario.html";
+                location.href = "http://129.151.125.93/frontciclo4/inventario.html";
             }
         }
 }
