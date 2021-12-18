@@ -165,7 +165,7 @@ function mensajePedido(responseorder){
 
 $("#cerrarSesion").click(function(){
     sessionStorage.clear();
-    location.href = "../index.html";
+    location.href = "http://129.151.125.93/frontciclo4/index.html";
 });
 
 
